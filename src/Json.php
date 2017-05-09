@@ -10,5 +10,10 @@ class Json
     public static function decode($jsonData)
     {
         return json_decode($jsonData, true);
-    } 
+    }
+
+    public function phpStormTestGit()
+    {
+        echo 'This is my gitTest';
+    }
 }
