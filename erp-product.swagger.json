@@ -1,0 +1,2005 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "host": "gateway.ickey.com",
+  "basePath": "/erp-product",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "product/product_pool/product-pool/add": {
+      "post": {
+        "summary": "商品池添加",
+        "operationId": "ProductPoolAddHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolAddResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolAddReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/edit": {
+      "post": {
+        "summary": "商品池编辑",
+        "operationId": "ProductPoolEditHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolEditResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolEditReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/enable": {
+      "post": {
+        "summary": "商品池启用",
+        "operationId": "ProductPoolEnableHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolEnableResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolEnableReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/get-img-url": {
+      "post": {
+        "summary": "获取图片地址",
+        "operationId": "ProductPoolRuleGetImgUrlHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleGetImgUrlResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleGetImgUrlReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/list": {
+      "post": {
+        "summary": "商品池列表",
+        "operationId": "ProductPoolListHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolListResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolListReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/rule/add": {
+      "post": {
+        "summary": "商品池规则添加",
+        "operationId": "ProductPoolRuleAddHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleAddResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleAddReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/rule/delete": {
+      "post": {
+        "summary": "商品池规则删除",
+        "operationId": "ProductPoolRuleDeleteHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleDeleteResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleDeleteReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/rule/edit": {
+      "post": {
+        "summary": "商品池规则编辑",
+        "operationId": "ProductPoolRuleEditHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleEditResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleEditReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/rule/import": {
+      "post": {
+        "summary": "商品池规则导入",
+        "operationId": "ProductPoolRuleImportHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleImportResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleImportReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/rule/list": {
+      "post": {
+        "summary": "商品池规则列表",
+        "operationId": "ProductPoolRuleListHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleListResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleListReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/rule/sku-list/list": {
+      "post": {
+        "summary": "商品池-规则配置-sku清单列表",
+        "operationId": "ProductPoolRuleSkuListListHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleSkuListListResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleSkuListListReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/rule/sku-list/re-generate": {
+      "post": {
+        "summary": "商品池-规则配置-sku清单重新生成",
+        "operationId": "ProductPoolRuleSkuListReGenerateHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleSkuListReGenerateResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleSkuListReGenerateReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/sku/import": {
+      "post": {
+        "summary": "商品池sku导入",
+        "operationId": "ProductPoolSkuImportHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolSkuImportResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolSkuImportReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/sku/sku-list/list": {
+      "post": {
+        "summary": "商品池-sku导入-sku清单列表",
+        "operationId": "ProductPoolSkuSkuListListHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolSkuSkuListListResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolSkuSkuListListReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    },
+    "product/product_pool/product-pool/upload-img": {
+      "post": {
+        "summary": "上传图片",
+        "operationId": "ProductPoolRuleUploadImgHandler",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "err_code": {
+                  "type": "string",
+                  "default": "Com:Success"
+                },
+                "msg": {
+                  "type": "string"
+                },
+                "data": {
+                  "$ref": "#/definitions/ProductPoolRuleUploadImgResp"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductPoolRuleUploadImgReq"
+            }
+          }
+        ],
+        "tags": [
+          "product/product_pool"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "OperateLog": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "description": " 操作内容"
+        },
+        "operator_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 操作人id"
+        },
+        "operator_name": {
+          "type": "string",
+          "description": " 操作人姓名"
+        },
+        "create_time": {
+          "type": "string",
+          "description": " 操作时间"
+        },
+        "remark": {
+          "type": "string",
+          "description": " 备注"
+        }
+      },
+      "title": "OperateLog",
+      "required": [
+        "content",
+        "operator_id",
+        "operator_name",
+        "create_time",
+        "remark"
+      ]
+    },
+    "PageInfo": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 记录总数"
+        },
+        "current": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 当前页码"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 页大小"
+        }
+      },
+      "title": "PageInfo",
+      "required": [
+        "total",
+        "current",
+        "size"
+      ]
+    },
+    "PoolPageResp": {
+      "type": "object",
+      "properties": {
+        "current": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 当前页码"
+        },
+        "total": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 总页数"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 每页数量"
+        }
+      },
+      "title": "PoolPageResp",
+      "required": [
+        "current",
+        "total",
+        "size"
+      ]
+    },
+    "ProductPoolAddReq": {
+      "type": "object",
+      "properties": {
+        "pool_name": {
+          "type": "string",
+          "description": " 商品池名称"
+        },
+        "pool_type": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池类型 1-增量商品池;2-可变更商品池"
+        },
+        "create_type": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 创建类型 1-规则配置;2-sku导入"
+        },
+        "start_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 开始时间"
+        },
+        "end_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 结束时间"
+        },
+        "priority": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 优先级"
+        },
+        "strategy_group_code": {
+          "type": "string",
+          "description": " 策略组编码"
+        },
+        "rules_list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolRuleItem"
+          },
+          "description": " 商品池规则配置列表"
+        }
+      },
+      "title": "ProductPoolAddReq",
+      "required": [
+        "pool_name",
+        "pool_type",
+        "create_type",
+        "start_time",
+        "end_time"
+      ]
+    },
+    "ProductPoolAddResp": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        }
+      },
+      "title": "ProductPoolAddResp",
+      "required": [
+        "id"
+      ]
+    },
+    "ProductPoolEditReq": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "pool_name": {
+          "type": "string",
+          "description": " 商品池名称"
+        },
+        "start_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 开始时间"
+        },
+        "end_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 结束时间"
+        },
+        "priority": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 优先级"
+        }
+      },
+      "title": "ProductPoolEditReq",
+      "required": [
+        "id",
+        "pool_name",
+        "start_time",
+        "end_time"
+      ]
+    },
+    "ProductPoolEditResp": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        }
+      },
+      "title": "ProductPoolEditResp",
+      "required": [
+        "id"
+      ]
+    },
+    "ProductPoolEnableReq": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        }
+      },
+      "title": "ProductPoolEnableReq",
+      "required": [
+        "id"
+      ]
+    },
+    "ProductPoolEnableResp": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        }
+      },
+      "title": "ProductPoolEnableResp",
+      "required": [
+        "id"
+      ]
+    },
+    "ProductPoolItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "pool_code": {
+          "type": "string",
+          "description": " 商品池编号"
+        },
+        "pool_type": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池类型 1-增量商品池;2-可变更商品池"
+        },
+        "create_type": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 创建类型 1-规则配置;2-sku导入"
+        },
+        "pool_name": {
+          "type": "string",
+          "description": " 商品池名称"
+        },
+        "strategy_group_code": {
+          "type": "string",
+          "description": " 所属策略组code"
+        },
+        "priority": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 优先级: 数值越大优先级越高（在策略组内生效）"
+        },
+        "proc_state": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 数据处理状态: 1-未处理; 2-处理中 3-处理完成"
+        },
+        "sku_num": {
+          "type": "integer",
+          "format": "int64",
+          "description": " sku数量"
+        },
+        "start_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 开始时间"
+        },
+        "end_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 结束时间"
+        },
+        "state": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 状态: 1-未启用;2-已启用 3-已过期"
+        },
+        "operator_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 操作人id"
+        },
+        "operator_name": {
+          "type": "string",
+          "description": " 操作人名称"
+        },
+        "create_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 创建时间"
+        },
+        "sys_auto_update_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 系统自动更新时间"
+        }
+      },
+      "title": "ProductPoolItem",
+      "required": [
+        "id",
+        "pool_code",
+        "pool_type",
+        "create_type",
+        "pool_name",
+        "strategy_group_code",
+        "priority",
+        "proc_state",
+        "sku_num",
+        "start_time",
+        "end_time",
+        "state",
+        "operator_id",
+        "operator_name",
+        "create_time",
+        "sys_auto_update_time"
+      ]
+    },
+    "ProductPoolListReq": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "integer",
+          "format": "int64",
+          "default": "1",
+          "description": " 页码"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "default": "10",
+          "description": " 每页数量"
+        },
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "pool_name": {
+          "type": "string",
+          "description": " 商品池名称"
+        },
+        "state": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 状态"
+        },
+        "proc_state": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 处理状态"
+        },
+        "pool_type": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池类型"
+        },
+        "sku": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " sku列表"
+        }
+      },
+      "title": "ProductPoolListReq",
+      "required": [
+        "page",
+        "size"
+      ]
+    },
+    "ProductPoolListResp": {
+      "type": "object",
+      "properties": {
+        "list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolItem"
+          }
+        },
+        "page": {
+          "$ref": "#/definitions/PoolPageResp"
+        }
+      },
+      "title": "ProductPoolListResp",
+      "required": [
+        "list",
+        "page"
+      ]
+    },
+    "ProductPoolRuleAddReq": {
+      "type": "object",
+      "properties": {
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "rule_list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolRuleItem"
+          },
+          "description": " 规则列表"
+        }
+      },
+      "title": "ProductPoolRuleAddReq",
+      "required": [
+        "pool_id",
+        "rule_list"
+      ]
+    },
+    "ProductPoolRuleAddResp": {
+      "type": "object",
+      "title": "ProductPoolRuleAddResp"
+    },
+    "ProductPoolRuleDeleteReq": {
+      "type": "object",
+      "properties": {
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "rule_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 规则id"
+        }
+      },
+      "title": "ProductPoolRuleDeleteReq",
+      "required": [
+        "pool_id",
+        "rule_id"
+      ]
+    },
+    "ProductPoolRuleDeleteResp": {
+      "type": "object",
+      "title": "ProductPoolRuleDeleteResp"
+    },
+    "ProductPoolRuleDetail": {
+      "type": "object",
+      "properties": {
+        "col": {
+          "type": "string",
+          "description": " 规则对象列名"
+        },
+        "op": {
+          "type": "string",
+          "description": " 规则操作符"
+        },
+        "val": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 规则值"
+        }
+      },
+      "title": "ProductPoolRuleDetail",
+      "required": [
+        "col",
+        "op",
+        "val"
+      ]
+    },
+    "ProductPoolRuleDetailItem": {
+      "type": "object",
+      "properties": {
+        "rule_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 规则id"
+        },
+        "strategy_group_code": {
+          "type": "string",
+          "description": " 策略组编码"
+        },
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "rule_type": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 规则类型 1-页面配置;2-CSV导入;3-API导入"
+        },
+        "rule_detail": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolRuleDetail"
+          },
+          "description": " 规则详情"
+        },
+        "rule_hash_key": {
+          "type": "string",
+          "description": " 规则hashkey"
+        },
+        "version": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 版本"
+        },
+        "operator_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 操作人id"
+        },
+        "operator_name": {
+          "type": "string",
+          "description": " 操作人名称"
+        },
+        "create_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 创建时间"
+        },
+        "sys_auto_update_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 系统自动更新时间"
+        },
+        "proc_state": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 数据处理状态: -1-处理失败;1-未处理;2-处理中;3-处理完成"
+        },
+        "pro_sno": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 商品型号"
+        },
+        "pro_sno_relation": {
+          "type": "string",
+          "description": " 商品型号关系"
+        },
+        "std_mfr_id": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 标准厂牌id"
+        },
+        "std_mfr_id_relation": {
+          "type": "string",
+          "description": " 标准厂牌id关系"
+        },
+        "s_cate_id": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 二级分类id"
+        },
+        "s_cate_id_relation": {
+          "type": "string",
+          "description": " 二级分类id关系"
+        },
+        "t_cate_id": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 三级分类id"
+        },
+        "t_cate_id_relation": {
+          "type": "string",
+          "description": " 三级分类id关系"
+        },
+        "pro_sup_sno": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 供应商型号"
+        },
+        "pro_sup_sno_relation": {
+          "type": "string",
+          "description": " 供应商型号关系"
+        },
+        "pur_supplier_group": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 采购供应商业务组"
+        },
+        "pur_supplier_group_relation": {
+          "type": "string",
+          "description": " 采购供应商业务组关系"
+        },
+        "pur_supplier_id": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 采购供应商id"
+        },
+        "pur_supplier_id_relation": {
+          "type": "string",
+          "description": " 采购供应商id关系"
+        },
+        "pur_supplier_type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 采购供应商类型"
+        },
+        "pur_supplier_type_relation": {
+          "type": "string",
+          "description": " 采购供应商类型关系"
+        },
+        "supplier_pool_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 供应商池id"
+        },
+        "supplier_pool_ids_relation": {
+          "type": "string",
+          "description": " 供应商池id关系"
+        },
+        "pro_location": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 库存地"
+        },
+        "pro_location_relation": {
+          "type": "string",
+          "description": " 库存地关系"
+        },
+        "biz_type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 业务类型"
+        },
+        "biz_type_relation": {
+          "type": "string",
+          "description": " 业务类型关系"
+        },
+        "performance_rate": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 供应商履约率"
+        },
+        "performance_rate_relation": {
+          "type": "string",
+          "description": " 供应商履约率关系"
+        },
+        "lead_time_cn": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 内地货期"
+        },
+        "lead_time_cn_relation": {
+          "type": "string",
+          "description": " 内地货期关系"
+        },
+        "lead_time_hk": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 香港货期"
+        },
+        "lead_time_hk_relation": {
+          "type": "string",
+          "description": " 香港货期关系"
+        },
+        "mfr_id": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 原始厂牌id"
+        },
+        "mfr_id_relation": {
+          "type": "string",
+          "description": " 原始厂牌id关系"
+        },
+        "currency_id": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 销售价币种id"
+        },
+        "currency_id_relation": {
+          "type": "string",
+          "description": " 销售价币种id关系"
+        },
+        "price_rmb_first": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 人民币销售价第一阶梯价格"
+        },
+        "price_rmb_first_relation": {
+          "type": "string",
+          "description": " 人民币销售价第一阶梯价格关系"
+        },
+        "price_usd_first": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 美元销售价第一阶梯价格"
+        },
+        "price_usd_first_relation": {
+          "type": "string",
+          "description": " 美元销售价第一阶梯价格关系"
+        },
+        "price_rmb_last": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 人民币销售价最后阶梯价格"
+        },
+        "price_rmb_last_relation": {
+          "type": "string",
+          "description": " 人民币销售价最后阶梯价格关系"
+        },
+        "price_usd_last": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 美元销售价最后阶梯价格"
+        },
+        "price_usd_last_relation": {
+          "type": "string",
+          "description": " 美元销售价最后阶梯价格关系"
+        },
+        "cate_type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": " 商品分类类型"
+        },
+        "cate_type_relation": {
+          "type": "string",
+          "description": " 商品分类类型关系"
+        }
+      },
+      "title": "ProductPoolRuleDetailItem",
+      "required": [
+        "rule_id",
+        "strategy_group_code",
+        "pool_id",
+        "rule_type",
+        "rule_detail",
+        "rule_hash_key",
+        "version",
+        "operator_id",
+        "operator_name",
+        "create_time",
+        "sys_auto_update_time",
+        "proc_state",
+        "pro_sno",
+        "pro_sno_relation",
+        "std_mfr_id",
+        "std_mfr_id_relation",
+        "s_cate_id",
+        "s_cate_id_relation",
+        "t_cate_id",
+        "t_cate_id_relation",
+        "pro_sup_sno",
+        "pro_sup_sno_relation",
+        "pur_supplier_group",
+        "pur_supplier_group_relation",
+        "pur_supplier_id",
+        "pur_supplier_id_relation",
+        "pur_supplier_type",
+        "pur_supplier_type_relation",
+        "supplier_pool_ids",
+        "supplier_pool_ids_relation",
+        "pro_location",
+        "pro_location_relation",
+        "biz_type",
+        "biz_type_relation",
+        "performance_rate",
+        "performance_rate_relation",
+        "lead_time_cn",
+        "lead_time_cn_relation",
+        "lead_time_hk",
+        "lead_time_hk_relation",
+        "mfr_id",
+        "mfr_id_relation",
+        "currency_id",
+        "currency_id_relation",
+        "price_rmb_first",
+        "price_rmb_first_relation",
+        "price_usd_first",
+        "price_usd_first_relation",
+        "price_rmb_last",
+        "price_rmb_last_relation",
+        "price_usd_last",
+        "price_usd_last_relation",
+        "cate_type",
+        "cate_type_relation"
+      ]
+    },
+    "ProductPoolRuleEditReq": {
+      "type": "object",
+      "properties": {
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "rule_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 规则id"
+        },
+        "rule_list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolRuleDetail"
+          },
+          "description": " 规则列表"
+        }
+      },
+      "title": "ProductPoolRuleEditReq",
+      "required": [
+        "pool_id",
+        "rule_id",
+        "rule_list"
+      ]
+    },
+    "ProductPoolRuleEditResp": {
+      "type": "object",
+      "title": "ProductPoolRuleEditResp"
+    },
+    "ProductPoolRuleGetImgUrlReq": {
+      "type": "object",
+      "properties": {
+        "filename_list": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "文件路径列表"
+        }
+      },
+      "title": "ProductPoolRuleGetImgUrlReq",
+      "required": [
+        "filename_list"
+      ]
+    },
+    "ProductPoolRuleGetImgUrlResp": {
+      "type": "object",
+      "properties": {
+        "url_list": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "文件url列表"
+        }
+      },
+      "title": "ProductPoolRuleGetImgUrlResp",
+      "required": [
+        "url_list"
+      ]
+    },
+    "ProductPoolRuleImportReq": {
+      "type": "object",
+      "properties": {
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "file_url": {
+          "type": "string",
+          "description": " 文件url"
+        }
+      },
+      "title": "ProductPoolRuleImportReq",
+      "required": [
+        "pool_id",
+        "file_url"
+      ]
+    },
+    "ProductPoolRuleImportResp": {
+      "type": "object",
+      "title": "ProductPoolRuleImportResp"
+    },
+    "ProductPoolRuleItem": {
+      "type": "object",
+      "properties": {
+        "rule_detail_list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolRuleDetail"
+          },
+          "description": " 规则详情列表"
+        }
+      },
+      "title": "ProductPoolRuleItem",
+      "required": [
+        "rule_detail_list"
+      ]
+    },
+    "ProductPoolRuleListReq": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "integer",
+          "format": "int64",
+          "default": "1",
+          "description": " 页码"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "default": "10",
+          "description": " 每页数量"
+        },
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "rule_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 规则id"
+        },
+        "pur_supplier_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 真实供应商id"
+        },
+        "std_mfr_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 标准厂牌id"
+        },
+        "pro_sno": {
+          "type": "string",
+          "description": " 商品型号"
+        },
+        "pro_sup_sno": {
+          "type": "string",
+          "description": " 供应商型号"
+        },
+        "pro_location": {
+          "type": "string",
+          "description": " 库存地"
+        },
+        "biz_type": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 业务类型"
+        },
+        "cate_type": {
+          "type": "string",
+          "description": " 商品类型"
+        }
+      },
+      "title": "ProductPoolRuleListReq",
+      "required": [
+        "page",
+        "size",
+        "pool_id"
+      ]
+    },
+    "ProductPoolRuleListResp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 总条数"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolRuleDetailItem"
+          },
+          "description": " 规则列表"
+        }
+      },
+      "title": "ProductPoolRuleListResp",
+      "required": [
+        "total",
+        "list"
+      ]
+    },
+    "ProductPoolRuleSkuListItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池规则sku清单id"
+        },
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "sku": {
+          "type": "integer",
+          "format": "int64",
+          "description": " sku"
+        },
+        "pro_sno": {
+          "type": "string",
+          "description": " 商品型号"
+        },
+        "mfr_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 厂牌id"
+        },
+        "std_mfr_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 标准厂牌id"
+        },
+        "std_mfr_name": {
+          "type": "string",
+          "description": " 标准厂牌名称"
+        },
+        "create_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 创建时间"
+        },
+        "sys_auto_update_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 系统自动更新时间"
+        }
+      },
+      "title": "ProductPoolRuleSkuListItem",
+      "required": [
+        "id",
+        "pool_id",
+        "sku",
+        "pro_sno",
+        "mfr_id",
+        "std_mfr_id",
+        "std_mfr_name",
+        "create_time",
+        "sys_auto_update_time"
+      ]
+    },
+    "ProductPoolRuleSkuListListReq": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "integer",
+          "format": "int64",
+          "default": "1",
+          "description": " 页码"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "default": "10",
+          "description": " 每页数量"
+        },
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "sku": {
+          "type": "integer",
+          "format": "int64",
+          "description": " sku"
+        },
+        "pro_sno": {
+          "type": "string",
+          "description": " 商品型号"
+        },
+        "std_mfr_name": {
+          "type": "string",
+          "description": " 标准厂牌名称"
+        }
+      },
+      "title": "ProductPoolRuleSkuListListReq",
+      "required": [
+        "page",
+        "size",
+        "pool_id"
+      ]
+    },
+    "ProductPoolRuleSkuListListResp": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "$ref": "#/definitions/PoolPageResp",
+          "description": " 分页"
+        },
+        "state": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 状态 1-未处理;2-处理中;3-处理完成"
+        },
+        "completed_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 完成时间"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolRuleSkuListItem"
+          },
+          "description": " 商品池规则sku清单列表"
+        }
+      },
+      "title": "ProductPoolRuleSkuListListResp",
+      "required": [
+        "page",
+        "state",
+        "completed_time",
+        "list"
+      ]
+    },
+    "ProductPoolRuleSkuListReGenerateReq": {
+      "type": "object",
+      "properties": {
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        }
+      },
+      "title": "ProductPoolRuleSkuListReGenerateReq",
+      "required": [
+        "pool_id"
+      ]
+    },
+    "ProductPoolRuleSkuListReGenerateResp": {
+      "type": "object",
+      "title": "ProductPoolRuleSkuListReGenerateResp"
+    },
+    "ProductPoolRuleUploadImgReq": {
+      "type": "object",
+      "title": "ProductPoolRuleUploadImgReq"
+    },
+    "ProductPoolRuleUploadImgResp": {
+      "type": "object",
+      "properties": {
+        "accessid": {
+          "type": "string",
+          "description": "用户请求的AccessKey ID"
+        },
+        "host": {
+          "type": "string",
+          "description": "用户发送上传请求的域名。"
+        },
+        "policy": {
+          "type": "string",
+          "description": "用户表单上传的策略（Policy），Policy为经过Base64编码过的字符串"
+        },
+        "signature": {
+          "type": "string",
+          "description": "对Policy签名后的字符串"
+        },
+        "expire": {
+          "type": "integer",
+          "format": "int64",
+          "description": "由服务器端指定的Policy过期时间，格式为Unix时间戳（自UTC时间1970年01月01号开始的秒数）"
+        },
+        "dir": {
+          "type": "string",
+          "description": "限制上传的文件前缀"
+        }
+      },
+      "title": "ProductPoolRuleUploadImgResp",
+      "required": [
+        "accessid",
+        "host",
+        "policy",
+        "signature",
+        "expire",
+        "dir"
+      ]
+    },
+    "ProductPoolSkuImportReq": {
+      "type": "object",
+      "properties": {
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "file_url": {
+          "type": "string",
+          "description": " 文件url"
+        }
+      },
+      "title": "ProductPoolSkuImportReq",
+      "required": [
+        "pool_id",
+        "file_url"
+      ]
+    },
+    "ProductPoolSkuImportResp": {
+      "type": "object",
+      "title": "ProductPoolSkuImportResp"
+    },
+    "ProductPoolSkuSkuListItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池sku导入-sku清单id"
+        },
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "sku": {
+          "type": "integer",
+          "format": "int64",
+          "description": " sku"
+        },
+        "pro_sno": {
+          "type": "string",
+          "description": " 商品型号"
+        },
+        "mfr_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 厂牌id"
+        },
+        "std_mfr_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 标准厂牌id"
+        },
+        "std_mfr_name": {
+          "type": "string",
+          "description": " 标准厂牌名称"
+        },
+        "proc_state": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 数据处理状态: -1-处理失败;1-未处理;2-处理中;3-处理完成"
+        },
+        "state": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 状态: 1-未启用;2-已启用 3-已过期"
+        },
+        "create_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 创建时间"
+        },
+        "sys_auto_update_time": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 系统自动更新时间"
+        }
+      },
+      "title": "ProductPoolSkuSkuListItem",
+      "required": [
+        "id",
+        "pool_id",
+        "sku",
+        "pro_sno",
+        "mfr_id",
+        "std_mfr_id",
+        "std_mfr_name",
+        "proc_state",
+        "state",
+        "create_time",
+        "sys_auto_update_time"
+      ]
+    },
+    "ProductPoolSkuSkuListListReq": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "integer",
+          "format": "int64",
+          "default": "1",
+          "description": " 页码"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "default": "10",
+          "description": " 每页数量"
+        },
+        "pool_id": {
+          "type": "integer",
+          "format": "int64",
+          "description": " 商品池id"
+        },
+        "sku": {
+          "type": "integer",
+          "format": "int64",
+          "description": " sku"
+        },
+        "pro_sno": {
+          "type": "string",
+          "description": " 商品型号"
+        },
+        "std_mfr_name": {
+          "type": "string",
+          "description": " 标准厂牌名称"
+        }
+      },
+      "title": "ProductPoolSkuSkuListListReq",
+      "required": [
+        "page",
+        "size",
+        "pool_id"
+      ]
+    },
+    "ProductPoolSkuSkuListListResp": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "$ref": "#/definitions/PoolPageResp",
+          "description": " 分页"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductPoolSkuSkuListItem"
+          },
+          "description": " 商品池sku导入-sku清单列表"
+        }
+      },
+      "title": "ProductPoolSkuSkuListListResp",
+      "required": [
+        "page",
+        "list"
+      ]
+    },
+    "SelectResp": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "title": "SelectResp",
+      "required": [
+        "id",
+        "value"
+      ]
+    }
+  },
+  "securityDefinitions": {
+    "apiKey": {
+      "type": "apiKey",
+      "description": "Enter JWT Bearer token **_only_**",
+      "name": "Authorization",
+      "in": "header"
+    }
+  }
+}
